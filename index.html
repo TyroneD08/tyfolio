@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="site-vanta" class="site-vanta" aria-hidden="true"></div>
-
     <header class="header">
         <a href="index.html" class="logo">Tyrone Offei</a>
         <nav aria-label="Hoofdnavigatie">
@@ -20,6 +18,7 @@
             <a class="nav-accent" href="projecten.html">Projecten</a>
             <a href="over-mij.html">Over mij</a>
             <a class="nav-accent" href="contact.html">Contact</a>
+            <a class="header-cv" href="img/BossCV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
         </nav>
     </header>
 
@@ -35,11 +34,6 @@
                 <div class="image-placeholder">
                     <img src="img/tyrone.jpg" alt="Tyrone Offei">
                 </div>
-                <div class="profile-links">
-                    <a class="cv-link" href="img/BossCV.pdf" target="_blank" rel="noopener noreferrer">mijn CV</a>
-                    <a class="cv-link" href="https://www.linkedin.com/in/tyrone-offei-a99621439/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    <a class="cv-link" href="https://github.com/TyroneD08" target="_blank" rel="noopener noreferrer">GitHub</a>
-                </div>
             </article>
         </section>
 
@@ -48,46 +42,37 @@
             <h2 id="home-projects-title">Mijn Beste Werk</h2>
             <div class="project-showcase">
                 <article class="showcase-project">
-                    <a class="showcase-project-image-frame" href="https://38696.hosts2.ma-cloud.nl/Korio/" target="_blank" rel="noopener noreferrer" aria-label="Open de KORIO-website">
-                        <img class="showcase-project-image" src="img/korioff.png" alt="Screenshot van de KORIO-webshop">
-                    </a>
-                    <div class="showcase-project-content">
-                        <p class="showcase-project-number">Webshop</p>
-                        <h2>KORIO</h2>
-                        <p>Een overzichtelijke webshop waar je anime- en mangaproducten kunt bekijken, filteren en toevoegen aan je winkelmandje.</p>
-                        <div class="showcase-project-links">
-                            <p><a href="https://github.com/TyroneD08/Korio" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-                            <p><a href="https://38696.hosts2.ma-cloud.nl/Korio/" target="_blank" rel="noopener noreferrer">KORIO</a></p>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="showcase-project">
-                    <a class="showcase-project-image-frame" href="https://38696.hosts2.ma-cloud.nl/RoomusRemodel/" target="_blank" rel="noopener noreferrer" aria-label="Open de Roomus-website">
-                        <img class="showcase-project-image showcase-project-image--roomus" src="img/roomusff.png" alt="Screenshot van Roomus">
-                    </a>
-                    <div class="showcase-project-content">
-                        <p class="showcase-project-number">Studentenplatform</p>
-                        <h2>Roomus</h2>
-                        <p>Een website voor studenten die een kamer of huisgenoot zoeken. Bekijk beschikbare kamers en kom in contact met andere studenten.</p>
-                        <div class="showcase-project-links">
-                            <p><a href="https://github.com/TyroneD08/RoomusRemodel" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-                            <p><a href="https://38696.hosts2.ma-cloud.nl/RoomusRemodel/" target="_blank" rel="noopener noreferrer">Roomus</a></p>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="showcase-project">
                     <a class="showcase-project-image-frame" href="https://38696.hosts2.ma-cloud.nl/KiaroAnime/" target="_blank" rel="noopener noreferrer" aria-label="Open de KairoAnime-website">
                         <img class="showcase-project-image" src="img/kairoff.png" alt="Screenshot van KairoAnime">
                     </a>
                     <div class="showcase-project-content">
                         <p class="showcase-project-number">Anime ontdekker</p>
                         <h2>KairoAnime</h2>
-                        <p>Ontdek anime, zoek naar series en blader door genres. De animegegevens worden opgehaald via een API.</p>
+                        <p>Ontdek anime, zoek naar series en blader door genres. De animegegevens worden opgehaald via een API. <button class="showcase-project-more" type="button" aria-label="Meer informatie over KairoAnime" aria-haspopup="dialog"
+                            data-project-details data-title="KairoAnime"
+                            data-description="KairoAnime is een website waarmee gebruikers anime kunnen ontdekken en verkennen. Je kunt zoeken naar verschillende series, door genres bladeren en animegegevens bekijken. De website maakt gebruik van een externe API om anime-informatie op te halen en dynamisch weer te geven. Hierbij ligt de nadruk op een interactieve ervaring, een overzichtelijke presentatie van de gegevens en het eenvoudig vinden van nieuwe anime om te bekijken."
+                            data-technologies="HTML · CSS · JavaScript · API">↗</button></p>
                         <div class="showcase-project-links">
                             <p><a href="https://github.com/TyroneD08/KairoAnime" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-                            <p><a href="https://38696.hosts2.ma-cloud.nl/KiaroAnime/" target="_blank" rel="noopener noreferrer">KairoAnime</a></p>
+                            <p><a href="https://38696.hosts2.ma-cloud.nl/KiaroAnime/" data-project-preview>KairoAnime</a></p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="showcase-project">
+                    <a class="showcase-project-image-frame" href="https://38696.hosts2.ma-cloud.nl/Korio/" target="_blank" rel="noopener noreferrer" aria-label="Open de KORIO-website">
+                        <img class="showcase-project-image" src="img/korioff.png" alt="Screenshot van de KORIO-webshop">
+                    </a>
+                    <div class="showcase-project-content">
+                        <p class="showcase-project-number">Webshop</p>
+                        <h2>KORIO</h2>
+                        <p>Een overzichtelijke webshop waar je anime- en mangaproducten kunt bekijken, filteren en toevoegen aan je winkelmandje. <button class="showcase-project-more" type="button" aria-label="Meer informatie over KORIO" aria-haspopup="dialog"
+                            data-project-details data-title="KORIO"
+                            data-description="KORIO is een overzichtelijke webshop gericht op anime- en mangaproducten. Gebruikers kunnen het assortiment bekijken, producten filteren en eenvoudig hun favoriete items toevoegen aan hun winkelmandje. Bij het ontwerp ligt de focus op een prettige gebruikerservaring, een duidelijke structuur en een moderne uitstraling die aansluit bij de animecultuur."
+                            data-technologies="HTML · CSS · JavaScript">↗</button></p>
+                        <div class="showcase-project-links">
+                            <p><a href="https://github.com/TyroneD08/Korio" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+                            <p><a href="https://38696.hosts2.ma-cloud.nl/Korio/" data-project-preview>KORIO</a></p>
                         </div>
                     </div>
                 </article>
@@ -95,13 +80,12 @@
         </section>
     </main>
 
+    
     <footer>
         <p>© <span class="current-year">2026</span> Tyrone Offei</p>
         <a class="footer-email" href="mailto:tyrone.developer@outlook.com">tyrone.developer@outlook.com</a>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.birds.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
